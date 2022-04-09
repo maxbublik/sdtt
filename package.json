@@ -1,4 +1,5 @@
 {
+  "publisher": "maxbublik",
   "name": "vscode-stop-debug-and-terminate-tasks",
   "version": "0.0.1",
   "main": "./extension.cjs",
