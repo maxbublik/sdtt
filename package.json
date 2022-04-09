@@ -2,7 +2,7 @@
   "publisher": "maxbublik",
   "name": "vscode-stop-debug-and-terminate-tasks",
   "version": "0.0.1",
-  "main": "./extension.cjs",
+  "main": "dist/extension/main.js",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -16,5 +16,12 @@
   },
   "activationEvents": [
     "onCommand:vscode-stop-debug-and-terminate-tasks"
-  ]
+  ],
+  "scripts": {
+    "build": "rm -rf ./dist && mkdir -p ./dist/extension && cp ./src/extension.js ./dist/extension/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxbublik/vscode-stop-debug-and-terminate-tasks.git"
+  }
 }
