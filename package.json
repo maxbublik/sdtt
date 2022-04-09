@@ -20,6 +20,7 @@
   "scripts": {
     "build": "rm -rf ./dist && mkdir -p ./dist/extension && cp ./src/extension.js ./dist/extension/main.js"
   },
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/maxbublik/vscode-stop-debug-and-terminate-tasks.git"
