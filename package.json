@@ -1,7 +1,7 @@
 {
   "publisher": "maxbublik",
   "name": "sdtt",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/extension/main.js",
   "engines": {
     "vscode": "^1.60.0"
@@ -24,6 +24,6 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxbublik/vscode-stop-debug-and-terminate-tasks.git"
+    "url": "https://github.com/maxbublik/sdtt.git"
   }
 }
