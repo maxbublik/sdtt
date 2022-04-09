@@ -1,0 +1,19 @@
+{
+  "name": "vscode-stop-debug-and-terminate-tasks",
+  "version": "0.0.1",
+  "main": "./extension.cjs",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-stop-debug-and-terminate-tasks",
+        "title": "Stop debug and Terminate all tasks"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onCommand:vscode-stop-debug-and-terminate-tasks"
+  ]
+}
