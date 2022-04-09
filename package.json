@@ -1,7 +1,7 @@
 {
   "publisher": "maxbublik",
-  "name": "vscode-stop-debug-and-terminate-tasks",
-  "version": "0.0.1",
+  "name": "sdtt",
+  "version": "0.0.3",
   "main": "dist/extension/main.js",
   "engines": {
     "vscode": "^1.60.0"
@@ -9,16 +9,17 @@
   "contributes": {
     "commands": [
       {
-        "command": "vscode-stop-debug-and-terminate-tasks",
-        "title": "Stop debug and Terminate all tasks"
+        "command": "sdtt.invoke",
+        "title": "Stop debug and Terminate all tasks",
+        "category": "Debug"
       }
     ]
   },
   "activationEvents": [
-    "onCommand:vscode-stop-debug-and-terminate-tasks"
+    "onCommand:sdtt.invoke"
   ],
   "scripts": {
-    "build": "rm -rf ./dist && mkdir -p ./dist/extension && cp ./src/extension.js ./dist/extension/main.js"
+    "build": "rm -rf ./dist && esbuild --outfile=./dist/extension/main.js --platform=node --bundle --external:vscode ./src/extension.ts"
   },
   "license": "Apache-2.0",
   "repository": {
