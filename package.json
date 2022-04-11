@@ -1,7 +1,7 @@
 {
   "publisher": "maxbublik",
   "name": "sdtt",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/extension/main.js",
   "engines": {
     "vscode": "^1.60.0"
@@ -19,7 +19,7 @@
     "onCommand:sdtt.invoke"
   ],
   "scripts": {
-    "build": "rm -rf ./dist && esbuild --outfile=./dist/extension/main.js --platform=node --bundle --external:vscode ./src/extension.ts"
+    "dist": "rm -rf ./dist && esbuild --outfile=./dist/extension/main.js --platform=node --bundle --minify --external:vscode ./src/extension.ts"
   },
   "license": "Apache-2.0",
   "repository": {
