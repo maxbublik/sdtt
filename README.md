@@ -11,4 +11,4 @@ The given extension offers a new macro-like command that does two things:
 
 Bind the command to a keyboard shortcut (if you wish) or invoke it via command palette (like in the video below)
 
-![demo](https://github.com/maxbublik/sdtt/raw/media/media/1.gif)
+<img src="https://github.com/maxbublik/sdtt/raw/media/media/1.gif" width="500">
